@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.button-section {
+    display:inline-block;
+}
+
+.button-section button {
+    margin:.5em;
+    background-color:#E71E62;
+    border-color: #E71E62;
+    color:#020001;
+    display:inline-block;
+
+}
+.button-section img{
+    margin-right:0.25em;
+}
+
+
+.button-section button:hover{
+    color:#E71E62;
+    background-color:#020001;
+    border-color:#020001;
+
+}
+
+.heading-section {
+    margin:.25em;
+    text-align:center;
+    display:inline-block;
+
+}
+.heading-section h1{
+    font-family: 'Dancing Script', cursive;
+    color: #FCFCFC;
+}
+.heading-section p{
+    color:#E53770;
+    letter-spacing:0.15em;
+    font-size:1.25em;
+}
+ .heading-section hr {
+    max-width:25%;
+    height:.025em;
+    background-color: rgba(255, 255, 255, 0.342);
+} 
+.heading-section img{
+    max-width:20%;
+    max-height:20%;
+    border: 1px;
+    border-radius:50%;
+}
+.content-section {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:black;
+    text-align:center;
+}
+.footer-section {
+    text-align:center;
+    margin:.5em;
+    color:white;
+}
+
+
+/* .div-test {
+    width:600px;
+    height:50px;
+    border: 2px solid black;
+    border-radius:5px;
+} */
+
+/* would be better media query(s) */
+.div-test2 {
+    max-width:65%;
+    /* border: 2px solid black; */
+}
