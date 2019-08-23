@@ -61,9 +61,10 @@ class Home extends Component {
                         ><img src={EmailIcon} />Gmail Me
                         </button>
                     </div>
+                    
 
                 </div>
-                <div className="footer-section container">
+                <div className=" row-sm-4 footer-section container">
                     <div className="contact-section">
                         <p>Contact Info:</p>
                         <ul>
@@ -71,7 +72,7 @@ class Home extends Component {
                         </ul>
                     </div>
                     <br />
-                    <div  className="my-branding">
+                    <div className="my-branding">
                         <ul>
                             <li>Version Info: 82319V1.0</li>
                             <li>Created By: <a href="https://www.group48.com/" target="_blank">www.group48.com</a></li>
