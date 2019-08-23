@@ -63,9 +63,20 @@ class Home extends Component {
                     </div>
 
                 </div>
-                <div className="footer-section">
-                    <p>Contact Info: </p>
-                    <p> {Constants.EMAIL}</p>
+                <div className="footer-section container">
+                    <div className="contact-section">
+                        <p>Contact Info:</p>
+                        <ul>
+                            <li><p>{Constants.EMAIL}</p></li>
+                        </ul>
+                    </div>
+                    <br />
+                    <div  className="my-branding">
+                        <ul>
+                            <li>Version Info: 82319V1.0</li>
+                            <li>Created By: <a href="https://www.group48.com/" target="_blank">www.group48.com</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )

@@ -60,6 +60,22 @@
     text-align:center;
     margin:.5em;
     color:white;
+    display: inline-block;
+}
+.footer-section ul {
+    list-style: none;
+}
+.footer-section p {
+    font-size:.8em;
+    display:inline-block;
+}
+.my-branding {
+    color:grey;
+    font-size:0.75em;
+    /* text-align:center; */
+}
+.contact-section {
+    text-align:center;
 }
 
 
