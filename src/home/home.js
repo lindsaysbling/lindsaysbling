@@ -64,7 +64,8 @@ class Home extends Component {
 
                 </div>
                 <div className="footer-section">
-                    <p>Contact Info: {Constants.EMAIL}</p>
+                    <p>Contact Info: </p>
+                    <p> {Constants.EMAIL}</p>
                 </div>
             </div>
         )
