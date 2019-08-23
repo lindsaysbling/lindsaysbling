@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 .button-section {
-    display:inline-block;
+    text-align:center;
+    max-width:70%;
+    
 }
 
 .button-section button {
@@ -40,10 +42,17 @@
     letter-spacing:0.15em;
     font-size:1.25em;
 }
- .heading-section hr {
-    max-width:25%;
+.inline-block{
+    display:inline-block;
+}
+.text-center{
+    text-align:center;
+}
+ hr {
+    max-width:20%;
     height:.025em;
     background-color: rgba(255, 255, 255, 0.342);
+    
 } 
 .heading-section img{
     max-width:20%;
@@ -58,7 +67,7 @@
 }
 .footer-section {
     text-align:center;
-    margin:.5em;
+    margin-top:2em;
     color:white;
     display: inline-block;
 }
@@ -72,7 +81,11 @@
     color:grey;
     font-size:0.75em;
     padding-right:2em;
+    margin-top:2em;
     /* text-align:center; */
+}
+.my-branding p{
+    font-size:0.75em;
 }
 .contact-section{
     text-align:center;
@@ -90,7 +103,3 @@
 } */
 
 /* would be better media query(s) */
-.div-test2 {
-    max-width:65%;
-    /* border: 2px solid black; */
-}

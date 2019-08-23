@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './home.css';
-import Avatar from './avatar.jpg';
 import * as Constants from '../constants/index.js';
-import CartIcon from './shoppingcart.svg';
-import EmailIcon from './email.svg';
+import Avatar from '../images/avatar.jpg';
+import CartIcon from '../images/shoppingcart.svg';
+import EmailIcon from '../images/email.svg';
 class Home extends Component {
     constructor(){
         super();
@@ -27,24 +27,27 @@ class Home extends Component {
             <div className="jumbotron container content-section">
                 <div className="heading-section ">
                     <img src={Avatar} />
-                    <div className= "col-sm">
-                        <h1>{Constants.COMPANY_NAME}</h1>
-                        <p>{Constants.COMPANY_DESCRIPTION}</p>
-                        <hr />
+                    <div className= "col-sm text-center">
+                        <div className="col inline-block">
+                            <h1>{Constants.COMPANY_NAME}</h1>
+                        </div>
+                        <div className="col inline-block">
+                            <p>{Constants.COMPANY_DESCRIPTION}</p>
+                        </div>
+                            <hr />
                     </div>
                 </div>
-                <div className="col button-section container div-test2">
-        
-                    <div className="row-sm-4">
+                <div className="col button-section inline-block">
+                    <div className="row ">
                         <button 
                         type="button" 
-                        className="btn btn-primary btn-md btn-block"
+                        className="btn btn-primary btn-md btn-block "
                         onClick={this.handleButtonClick.bind(this,Constants.PAPARAZZI_URL)}
                         ><img src={CartIcon} />Paparazzi
                         </button>
                     </div>
                     
-                    <div className="row-sm-4">
+                    <div className="row ">
                         <button 
                         type="button" 
                         className="btn btn-primary btn-md btn-block"
@@ -53,7 +56,7 @@ class Home extends Component {
                         </button>
                     </div>
                     
-                    <div className="row-sm-4">
+                    <div className="row ">
                         <button 
                         type="button" 
                         className="btn btn-primary btn-md btn-block"
@@ -64,7 +67,7 @@ class Home extends Component {
                     
 
                 </div>
-                <div className=" row-sm-4 footer-section container">
+                <div className=" col-sm-4 footer-section inline-block">
                     <div className="contact-section">
                         <p>Contact Info:</p>
                         <ul>
@@ -72,11 +75,13 @@ class Home extends Component {
                         </ul>
                     </div>
                     <br />
-                    <div className="my-branding">
+                    <div className=" my-branding">
                         <ul>
-                            <li>Version Info: 82319V1.0</li>
-                            <li>Created By: <a href="https://www.group48.com/" target="_blank">www.group48.com</a></li>
+                            <li>Another fine digital card.</li>
+                            <li>Created By: <a href="https://www.group48.com/" target="_blank">www.group48.com</a>.</li>
+                            <li><p>Version: 82319V1.0.</p></li>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
