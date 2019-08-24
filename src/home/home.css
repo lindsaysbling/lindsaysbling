@@ -80,7 +80,7 @@
 .my-branding {
     color:grey;
     font-size:0.75em;
-    padding-right:2em;
+    padding-right:3em;
     margin-top:2em;
     /* text-align:center; */
 }
@@ -92,6 +92,11 @@
 }
 .contact-section li{
     padding-right:2em;
+}
+.social-media-icon {
+    border-radius:50%;
+    max-width:20%;
+    max-height:20%;
 }
 
 

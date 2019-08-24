@@ -4,6 +4,7 @@ import * as Constants from '../constants/index.js';
 import Avatar from '../images/avatar.jpg';
 import CartIcon from '../images/shoppingcart.svg';
 import EmailIcon from '../images/email.svg';
+import FBIcon from '../images/FB.png';
 class Home extends Component {
     constructor(){
         super();
@@ -17,14 +18,14 @@ class Home extends Component {
     // Button click functions.
      handleButtonClick = (url) => {
           
-        window.open(url, '_blank');
+        window.open(url);
      }
     // end javascript code
 
     //render method
     render(){
         return (
-            <div className="jumbotron container content-section">
+            <div className="jumbotron content-section">
                 <div className="heading-section ">
                     <img src={Avatar} />
                     <div className= "col-sm text-center">
@@ -42,8 +43,9 @@ class Home extends Component {
                         <button 
                         type="button" 
                         className="btn btn-primary btn-md btn-block "
-                        onClick={this.handleButtonClick.bind(this,Constants.PAPARAZZI_URL)}
-                        ><img src={CartIcon} />Paparazzi
+                        onClick={this.handleButtonClick.bind(this,Constants.PAPARAZZI_URL)}>
+                            <img src={CartIcon} />
+                            Paparazzi
                         </button>
                     </div>
                     
@@ -51,8 +53,9 @@ class Home extends Component {
                         <button 
                         type="button" 
                         className="btn btn-primary btn-md btn-block"
-                        onClick={this.handleButtonClick.bind(this,Constants.SHOPIFY_URL)}
-                        ><img src={CartIcon} />Shopify
+                        onClick={this.handleButtonClick.bind(this,Constants.SHOPIFY_URL)}>
+                            <img src={CartIcon} />
+                            Shopify
                         </button>
                     </div>
                     
@@ -60,26 +63,36 @@ class Home extends Component {
                         <button 
                         type="button" 
                         className="btn btn-primary btn-md btn-block"
-                        onClick={this.handleButtonClick.bind(this,Constants.SENDEMAIL_URL)}
-                        ><img src={EmailIcon} />Gmail Me
+                        onClick={this.handleButtonClick.bind(this,Constants.SENDEMAIL_URL)}>
+                            <img src={EmailIcon} />Gmail Me
                         </button>
                     </div>
                     
 
                 </div>
-                <div className=" col-sm-4 footer-section inline-block">
-                    <div className="contact-section">
+                <div className=" col-sm-4 footer-section">
+                    <div className=" row contact-section inline-block">
                         <p>Contact Info:</p>
                         <ul>
                             <li><p>{Constants.EMAIL}</p></li>
                         </ul>
                     </div>
                     <br />
-                    <div className=" my-branding">
+                    <div className="row inline-block ">
+                        <div className="col-sm">
+                            <button type="button" className="btn" onClick={this.handleButtonClick.bind(this,Constants.FB_URL)}>
+                                <img className="social-media-icon" src={FBIcon} />
+                            </button>
+                        </div>
+                    </div>
+                    <br />
+                    <div className=" row my-branding inline-block">
                         <ul>
-                            <li>Another fine digital card.</li>
-                            <li>Created By: <a href="https://www.group48.com/" target="_blank">www.group48.com</a>.</li>
-                            <li><p>Version: 82319V1.0.</p></li>
+                            <li>{Constants.BRAND_MSG}</li>
+                            <li>Created By: <a href={Constants.CREATED_BY_URL} target="_blank">
+                                    {Constants.CREATED_BY}</a>.
+                                </li>
+                            <li><p>{Constants.VERSION_NUM}</p></li>
                         </ul>
                         
                     </div>
