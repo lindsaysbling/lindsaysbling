@@ -18,7 +18,7 @@ class Home extends Component {
     // Button click functions.
      handleButtonClick = (url) => {
           
-        window.open(url);
+        window.location.href= url;
      }
     // end javascript code
 
