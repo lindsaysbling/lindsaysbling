@@ -1,8 +1,8 @@
 {
-  "name": "business_card",
+  "name": "lindsays_bling",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://tylerglenski.github.io/business_card/",
+  "homepage":"https://lindsaysbling.github.io/lindsaysbling/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
