@@ -1,6 +1,7 @@
 ## Technologies:
 Bootstrap CDN
 ReactJs
+NodeJS
 CSS
 HTML
 
