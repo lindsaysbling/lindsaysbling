@@ -1,33 +1,33 @@
 ## Technologies:
-Bootstrap CDN
-ReactJs
-NodeJS
-CSS
-HTML
+Bootstrap CDN<br>
+ReactJs<br>
+NodeJS<br>
+CSS<br>
+HTML<br>
 
 ## To make update or code change
 
-git init
-git add .
-git commit -m "message"
-git push -u origin master
-
+git init<br>
+git add .<br>
+git commit -m "message"<br>
+git push -u origin master<br>
+<br>
 npm run deploy
- 
+ <br>
  ## Worker info
  cacheFirst service worker. app will serve cache first and check network for updates.
 
 ## List of npm installs and commands
 
-Install serve via npm
+Install serve via npm<br>
     npm i serve -g
 
 Install Npm’s into project folder
-    npm install --save gh-pages
+ <br>   npm install --save gh-pages
 
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
